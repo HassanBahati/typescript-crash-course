@@ -156,7 +156,7 @@ const james = new Person(6, "James");
 
 // console.log(mike, james);
 
-//adding new fields into a class
+//adding new fields into a sub-class
 class Employee extends Person {
   position: string;
 
@@ -167,4 +167,4 @@ class Employee extends Person {
 }
 
 const emp = new Employee(3, "Shawn", "Developer")
-console.log(emp.register())
+// console.log(emp.register())

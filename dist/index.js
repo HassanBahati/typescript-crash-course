@@ -88,7 +88,7 @@ const james = new Person(6, "James");
 //error because id is private
 // mike.id = 5;
 // console.log(mike, james);
-//adding new fields into a class
+//adding new fields into a sub-class
 class Employee extends Person {
     constructor(id, name, position) {
         // super because they are already initilised in the class we are extending
@@ -96,4 +96,4 @@ class Employee extends Person {
     }
 }
 const emp = new Employee(3, "Shawn", "Developer");
-console.log(emp.register());
+// console.log(emp.register())
