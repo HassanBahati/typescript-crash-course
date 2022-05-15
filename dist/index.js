@@ -40,3 +40,16 @@ var Direction2;
 })(Direction2 || (Direction2 = {}));
 // console.log(Direction2.Up)
 //Objects
+const user = {
+    id: 1,
+    name: "John",
+};
+const car = {
+    brand: "bmw",
+    price: 50,
+};
+// Type Assertion - tell compiler to treat an entity as a different type
+let cid = 1;
+let customerID = cid;
+let customerId = cid;
+// customerID = 5;

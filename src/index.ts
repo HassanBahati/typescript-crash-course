@@ -46,3 +46,26 @@ enum Direction2 {
 // console.log(Direction2.Up)
 
 //Objects
+const user: {
+  id: number;
+  name: string;
+} = {
+  id: 1,
+  name: "John",
+};
+
+type Car = {
+  brand: string;
+  price: number;
+};
+const car: Car = {
+  brand: "bmw",
+  price: 50,
+};
+
+// Type Assertion - tell compiler to treat an entity as a different type
+let cid: any = 1;
+let customerID = <number>cid;
+let customerId = cid as number;
+
+// customerID = 5;
