@@ -105,3 +105,15 @@ const p1: Point = 1;
 
 //use ? to make ffields optional eg age?: number
 // use readonly to prevent re-assigning of values to a field
+
+//interfaces with functions
+interface MathFunc {
+  (x: number, y: number): number;
+}
+const add: MathFunc = (x: number, y: number): number => {
+  return x + y;
+};
+
+const sub: MathFunc = (x: number, y: number): number => {
+  return x - y;
+};

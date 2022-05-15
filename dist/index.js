@@ -67,5 +67,9 @@ const car1 = {
     price: 50,
 };
 const p1 = 1;
-//use ? to make ffields optional eg age?: number
-// use readonly to prevent re-assigning of values to a field
+const add = (x, y) => {
+    return x + y;
+};
+const sub = (x, y) => {
+    return x - y;
+};
