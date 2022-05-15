@@ -122,16 +122,26 @@ const sub: MathFunc = (x: number, y: number): number => {
 // constructor run whenever a class is instantiated
 // private or protected makes the property only accessible within the class
 //public makes properties accessible anywhere, smae as not putting anything
-class Person {
-  private id: number;
+
+interface PersonInterface {
+  id: number;
+  name: string;
+  register(): string;
+}
+
+class Person implements PersonInterface {
+  //   private id: number;
+  //   protected id : number
+  // public id : number
+  id: number;
   name: string;
 
   constructor(id: number, name: string) {
     (this.id = id), (this.name = name);
   }
 
-  register(){
-      return `${this.name} is now registered.`
+  register() {
+    return `${this.name} is now registered.`;
   }
 }
 
@@ -139,7 +149,7 @@ const mike = new Person(1, "Mike");
 const james = new Person(6, "James");
 
 //methods in classes
-console.log(mike.register())
+console.log(mike.register());
 
 //error because id is private
 // mike.id = 5;
