@@ -166,5 +166,16 @@ class Employee extends Person {
   }
 }
 
-const emp = new Employee(3, "Shawn", "Developer")
+const emp = new Employee(3, "Shawn", "Developer");
 // console.log(emp.register())
+
+// GENERICS - used to build reuseable components
+function getArray<T>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+
+// generate 2 arrays - one of strings and the other of numbers
+let numArray = getArray<number>([1, 2, 3, 4, 5]);
+let strArray = getArray<string>(["mike", "moses", "jons"]);
+
+// numArray.push("hello");
