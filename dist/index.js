@@ -20,7 +20,7 @@ employee = [
     [1, "hassan"],
     [3, "bahati"],
 ];
-//Unions - variable with more than one type
+//  - variable with more than one type
 let identification = 22;
 identification = "22";
 //Enums(enumerated type) - define a set of named constants- if first is given a value of 1, the rest will count from that
@@ -62,4 +62,10 @@ function addNum(x, y) {
 function log(message) {
     console.log(message);
 }
-// log("hello")
+const car1 = {
+    brand: "bmw",
+    price: 50,
+};
+const p1 = 1;
+//use ? to make ffields optional eg age?: number
+// use readonly to prevent re-assigning of values to a field

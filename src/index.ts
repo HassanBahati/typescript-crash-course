@@ -25,7 +25,7 @@ employee = [
   [3, "bahati"],
 ];
 
-//Unions - variable with more than one type
+//  - variable with more than one type
 let identification: string | number = 22;
 identification = "22";
 
@@ -83,3 +83,25 @@ function log(message: string | number): void {
 }
 
 // log("hello")
+
+// INTERFACES - custom type || structure to obj or function
+interface CarInterface {
+  brand: string;
+  readonly price: number;
+  sold?: true;
+}
+const car1: CarInterface = {
+  brand: "bmw",
+  price: 50,
+};
+
+// car1.price = 400;
+
+// type and interface do similar thing
+// interace would be a preference
+// type majorly for  ] primitives and unions
+type Point = number | string;
+const p1: Point = 1;
+
+//use ? to make ffields optional eg age?: number
+// use readonly to prevent re-assigning of values to a field
