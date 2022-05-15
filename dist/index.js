@@ -53,3 +53,13 @@ let cid = 1;
 let customerID = cid;
 let customerId = cid;
 // customerID = 5;
+//FUNTCTION
+function addNum(x, y) {
+    return x + y;
+}
+// console.log(addNum(3,5))
+//void functions
+function log(message) {
+    console.log(message);
+}
+// log("hello")
