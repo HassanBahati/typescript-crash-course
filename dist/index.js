@@ -73,3 +73,22 @@ const add = (x, y) => {
 const sub = (x, y) => {
     return x - y;
 };
+//CLASSES
+// constructor run whenever a class is instantiated
+// private or protected makes the property only accessible within the class
+//public makes properties accessible anywhere, smae as not putting anything
+class Person {
+    constructor(id, name) {
+        (this.id = id), (this.name = name);
+    }
+    register() {
+        return `${this.name} is now registered.`;
+    }
+}
+const mike = new Person(1, "Mike");
+const james = new Person(6, "James");
+//methods in classes
+console.log(mike.register());
+//error because id is private
+// mike.id = 5;
+// console.log(mike, james);
