@@ -13,3 +13,7 @@ compile any ts files in dir
 compile to any ECMAScript version
 **********************************
 `change target in config file`
+
+compile dev dirs and prod dirs separate
+*****************************************
+`Edit outDir and rootDir in config file`
