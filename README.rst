@@ -1,6 +1,6 @@
 Install typescript
 ************************
-`tsc --watch file_name`
+`npm install -g typescript `
 
 Watch changes in a file
 ************************
